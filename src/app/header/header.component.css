@@ -1,0 +1,55 @@
+mat-toolbar {
+  background-color: #fff;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.right {
+  flex: 1 1 auto;
+}
+
+.right-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+mat-form-field {
+  margin-top: 30px;
+  padding: 0 ;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+input {
+  max-width: 200px;
+  border: none;
+  flex: 1;
+  outline: 0;
+  font-size: 16px;
+}
+
+input placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+
+.avatar {
+  border-radius: 50%;
+}

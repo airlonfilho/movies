@@ -1,0 +1,20 @@
+<div class="container">
+  <div fxLayout="row" fxLayoutAlign="start none">
+   <div class="imagem">
+    <img class="logo" [src]="getImage(movie.poster_path)">
+   </div>
+    <div class="content" fxLayout="column" fxLayoutAlign="start none">
+      <h2> <strong> {{movie.title}} </strong> <span> </span> </h2>
+      <span class="genres-list" >
+        <a class="genres" *ngFor="let genre of movie.genres"> {{genre.name}}, </a>
+      </span>
+
+      <span> <strong>{{movie.vote_average}}</strong> /10 </span>
+      <h3> Sinopse </h3>
+      <span> {{movie.overview}} </span>
+      <h3><strong> Roberto Aguirre-Sacasa </strong></h3>
+      <span> Criação </span>
+    </div>
+
+  </div>
+</div>

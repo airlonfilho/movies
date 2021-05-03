@@ -1,0 +1,15 @@
+<div class="movies" style="margin-left: 50px;">
+  <h1> Trending Films</h1>
+  <div class="trending" fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="flex-start">
+    <mat-card class="example-card"
+      *ngFor="let movie of movies | slice:0:8"
+      [routerLink]="['/movie/', movie.id]"
+    >
+        <img mat-card-image [src]="getImage(movie.backdrop_path)" width="50%" alt="Imagem Filme">
+      <mat-card-content>
+        <mat-card-title>{{movie.title | titulo: 30}}</mat-card-title>
+        <mat-card-subtitle> Lançamento: <strong>{{ movie.release_date | date:"dd/MM/yy" }}</strong></mat-card-subtitle>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
